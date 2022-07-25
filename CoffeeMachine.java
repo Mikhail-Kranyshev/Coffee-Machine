@@ -1,6 +1,5 @@
 package machine;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class CoffeeMachine {
@@ -105,7 +104,7 @@ public class CoffeeMachine {
             case "back":
                 break;
         }
-        if (notEnough == "") {
+        if (notEnough.equals("")) {
             System.out.println("I have enough resources, making you a coffee!");
         } else {
             System.out.println("Sorry, not enough " + notEnough);
